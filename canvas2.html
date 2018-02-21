@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<canvas id="myCanvas2" width="1500" height="600" style="border: 1px solid gray;">
+		<!-- A message if browser doesn't support canvas -->
+			Your browser doesn’t support HTML5 Canvas.
+		</canvas>
+		<script>
+		canvas2 = document.getElementById('myCanvas2');
+		context2 = canvas2.getContext('2d');
+		
+		context2.beginPath();
+		context2.moveTo(50, 400);
+		context2.bezierCurveTo(300, 300, 500, 500, 600, 400);
+		context2.closePath();
+		context2.stroke();
+		
+		context2.beginPath();
+		context2.moveTo(50,150);
+		context2.lineTo(100, 50);
+		context2.lineTo(150,150);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+	
+		
+		
+		context2.fillStyle = 'blue';
+		context2.fillRect(160,50, 10,100);
+		
+		
+		context2.beginPath();
+		context2.moveTo(170,50);
+		context2.lineTo(220,150);
+		context2.lineTo(170,150);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+		context2.beginPath();
+		context2.moveTo(200,150);
+		context2.lineTo(250,50);
+		context2.lineTo(250,150);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+		context2.fillStyle = 'blue';
+		context2.fillRect(250,50, 10,100);
+		
+		context2.fillStyle = 'blue';
+		context2.fillRect(270,50, 20,100);
+		
+		context2.beginPath();
+		context2.arc(290, 75, 25, 4.71, 1.57, false);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		context2.beginPath();
+		context2.arc(290, 125, 25, 4.71, 1.57, false);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+		context2.beginPath();
+		context2.arc(370, 110, 40, 3.14, 6.28, true);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+		context2.fillStyle = 'blue';
+		context2.fillRect(330,50, 20,60);
+		context2.fillStyle = 'blue';
+		context2.fillRect(390,50, 20,60);
+		
+		context2.beginPath();
+		context2.arc(450, 120, 30, 3.14, 6.28, true);
+		context2.closePath();
+		context2.fillStyle = "blue";
+		context2.fill();
+		
+		context2.fillStyle = 'blue';
+		context2.fillRect(465,50, 15,70);
+		
+		
+		
+		
+		context2.globalCompositeOperation = "destination-out";
+		context2.beginPath();
+		context2.moveTo(65,150);
+		context2.lineTo(85, 130);
+		context2.lineTo(115,130);
+		context2.lineTo(135,150);
+		context2.closePath();
+		context2.fill();
+		
+	
+		context2.beginPath();
+		context2.moveTo(170,150);
+		context2.lineTo(170, 100);
+		context2.lineTo(170,150);
+		
+		context2.closePath();
+		context2.fill();
+		
+		
+
+		</script>
+
+	</body>
+</html>
